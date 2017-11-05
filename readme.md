@@ -3,16 +3,26 @@
 ## ER diagram
 ![ERD](/src/ERD.png)
 
+# Relational scheme
 
 EMPLOYEE(`ID`, Name, Email, Address, Phone#)
+
 STORE(`ID`, Name, Email, SignUpDate, Address, Phone#)
+
 MEMBER(`ID`, Name, Email, Gender, DayOfBirth, Address, Phone#, Hobby)
+
 PRODUCT(`Code`, StoreID, Name, Detail, Price, PriceDiscount, UploadDate, Location)
+
 Like(`MemberID, ProductCode`) 
+
 Vote(`MemberID`, `ProductCode`, Rate, Content)
+
 Report(`MemberID, ProductCode, EmployeeID`, CheckStatus)
+
 Message(`SentTime`, MemberID, StoreID, Title, Content, Sender)
+
 Comment(`SentTime`, MemberID, ProductCode, EmployeeID, Content, CheckStatus)
+
 Order(`Code`, StoreID, MemberID, ProductCode, Amount, Cost, Requires, OrderDate, OrderStatus)
 
 ## Contraints
