@@ -3,7 +3,7 @@
 ## ER diagram
 ![ERD](/src/ERD.png)
 
-# Relational scheme
+## Relational scheme
 
 EMPLOYEE(`ID`, Name, Email, Address, Phone#)
 
